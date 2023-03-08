@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <h1 class="site-title">{{ title }}</h1>
-    <span class="site-icon">
+    <!--<span class="site-icon">
       <a target="_blank" href="https://discord.gg/WxFkT6u5BJ"
         ><i class="fa-brands fa-discord"></i
       ></a>
-    </span>
+    </span>-->
     <span class="site-description">{{ currentDate }} - {{ currentTime }}</span
     ><br />
-    <pan class="site-subdesc">Server Status: Stabil</pan>
+    <!--<pan class="site-subdesc">Server Status: Stabil</pan>-->
 
     <ul v-if="entries" class="entry-list">
       <li class="entry-item" v-for="entry in entries" :key="entry.id">
@@ -24,9 +24,9 @@
     <h1 v-else>Keine Events zur Zeit vorhanden!</h1>
 
     <footer class="footer">
-      <img src="./assets/fivem.png" alt="Fivem Logo" />
-      <img src="./assets/logo.png" alt="Logo von USG Roleplay" />
-      <img src="./assets/partner.png" alt="Partnerlogo noch ausstehend" />
+      <img src="./assets/ZH_SEB.png" alt="Stadt Zürich Soziale einrichtungen und Betriebe" />
+      <img src="./assets/logo.png" alt="Logo von Opportunity" />
+      <img src="./assets/SAG.png" alt="Stiftung SAG - Bessere Chancen für ihre Zukunft" />
     </footer>
   </div>
 </template>
@@ -38,7 +38,7 @@ export default {
   name: "App",
   data() {
     return {
-      title: "USG Roleplay Status",
+      title: "Opportunity Welcome",
       sheet_id: "10ZkAtQKajKSExdDZgh-cCwhMK9ECInSju1SML7Y_ySs",
       api_token: "AIzaSyAAOCKWgqDv0Br3vCj_7qGutJ8E5z9DbOs",
       ranges: "A2%3AE100",
@@ -92,17 +92,17 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap");
 
 body {
-  background-image: linear-gradient(to top, #860b00 0%, #942424 100%);
+  background: #e8eff4;
 }
 
 #app {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #d1d1d1;
+  color: #323d4a;
   margin: 60px;
 }
 
@@ -111,7 +111,7 @@ body {
   font-weight: 900;
   margin: 80px 0 20px 0;
 }
-
+/*
 a {
   color: #d1d1d1;
   text-decoration: none;
@@ -128,16 +128,9 @@ a:hover {
   margin: 0px 80px 20px 0px;
   float: right;
 }
-
+*/
 .site-description {
   font-size: 62px;
-  color: #9aa7b1;
-  font-weight: 500;
-  margin: 0;
-}
-
-.site-subdesc {
-  font-size: 42px;
   color: #9aa7b1;
   font-weight: 500;
   margin: 0;
@@ -150,19 +143,14 @@ a:hover {
 .entry-item {
   padding: 35px 40px;
   margin: 40px 0;
-  background-image: linear-gradient(
-    to right,
-    #4b4b4b04 0%,
-    #1d1d1d67 60%,
-    #1d1d1d02 100%
-  );
+  background: #0f05a0;
   font-size: 28px;
   line-height: 1.3;
   list-style: none;
 }
 
 .entry-daytime {
-  color: #0706067e;
+  color: #eb5e00;
   font-weight: 900;
 }
 
@@ -186,7 +174,7 @@ a:hover {
   left: 0;
   width: 100%;
   padding: 40px;
-  background-image: linear-gradient(to left, #4b4b4b10 0%, #1d1d1d91 100%);
+  background: #fff;
 }
 
 .footer img {
