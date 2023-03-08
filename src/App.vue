@@ -24,9 +24,15 @@
     <h1 v-else>Keine Events zur Zeit vorhanden!</h1>
 
     <footer class="footer">
-      <img src="./assets/ZH_SEB.png" alt="Stadt Zürich Soziale einrichtungen und Betriebe" />
+      <img
+        src="./assets/ZH_SEB.png"
+        alt="Stadt Zürich Soziale einrichtungen und Betriebe"
+      />
       <img src="./assets/logo.png" alt="Logo von Opportunity" />
-      <img src="./assets/SAG.png" alt="Stiftung SAG - Bessere Chancen für ihre Zukunft" />
+      <img
+        src="./assets/SAG.png"
+        alt="Stiftung SAG - Bessere Chancen für ihre Zukunft"
+      />
     </footer>
   </div>
 </template>
