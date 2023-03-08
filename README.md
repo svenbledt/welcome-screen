@@ -26,3 +26,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Netlify
+See [Netlify](https://welcome-opp.netlify.app/),
