@@ -186,4 +186,59 @@ a:hover {
 .footer img {
   height: 50px;
 }
+@media (max-width: 760px) {
+  #app {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 10px;
+  }
+
+  /*Style Code for the Title */
+  .site-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #323d4a;
+  }
+
+  /*Style Code for the List */
+  li {
+    padding: 18px 20px;
+    margin: 20px 0;
+    background-color: #0f05a0;
+    list-style: none;
+    line-height: 0.8;
+    font-size: 15px;
+    list-style: none;
+  }
+
+  .entry-daytime {
+    color: #eb5e00;
+    font-weight: 900;
+  }
+
+  .entry-title {
+    font-size: inherit;
+    margin: 0;
+    color: #ffbfab;
+    font-weight: 900;
+  }
+
+  /* Style Code for The Footer */
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+  }
+
+  .footer img {
+    height: 20px;
+  }
+}
 </style>
